@@ -1,6 +1,5 @@
 from crewai.tools import tool
 
-
 @tool("check_compliance_rules")
 def check_compliance_rules(query: str) -> str:
     """Queries corporate naming, tagging, and security compliance policies for the Nexus organization."""
