@@ -1,11 +1,7 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 resource "aws_s3_bucket" "nexus-apollo-data" {
   bucket = "nexus-apollo-data"
   acl    = "private"
-
+  region = "us-east-1"
   versioning {
     enabled = true
   }
