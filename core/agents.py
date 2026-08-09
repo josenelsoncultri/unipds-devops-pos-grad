@@ -20,7 +20,7 @@ def get_auditor(tools: Optional[List] = None) -> Agent:
     return Agent(
         role='Engenheiro de DevSecOps',
         goal='Garantir segurança e conformidade total dos projetos.',
-        backstory='Auditor rigoroso que utiliza ferramentas de scan e OPA.',
+        backstory='Auditor rigoroso que utiliza ferramentas de scan e OPA.', # Open Policy Agent
         tools=tools or [],
         llm=nexus_llm,
         verbose=True
