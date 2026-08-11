@@ -1,6 +1,7 @@
 # Framework Base de Agentes
 crewai
 crewai[tools]
+crewai[google-genai]
 
 # LLM e Orquestração
 langchain-groq

@@ -20,7 +20,7 @@ LLM._format_messages_for_provider = _patched_format_messages_for_provider
 
 # Centraliza a inteligência do projeto
 nexus_llm = LLM(
-    model="groq/llama-3.1-8b-instant",
-    api_key=os.getenv("GROQ_API_KEY"),
+    model="gemini/gemini-3.6-flash",
+    api_key=os.getenv("GEMINI_API_KEY"),
     temperature=0.2
 )
