@@ -19,6 +19,11 @@ spec:
       containers:
       - name: checkout-api
         # ERRO PROPOSITAL: tag de imagem inexistente -> ImagePullBackOff
-        image: nginx:versao-que-nao-existe-999
+        #image: nginx:versao-que-nao-existe-999
+        image: nginx:latest
+        command: ["/bin/sh", "-c", "exit 1"]
+        resources:
+          limits:
+            memory: "4Mi"
         ports:
         - containerPort: 80
